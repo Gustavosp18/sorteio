@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+    height: 100%;
+    background-color: #bdb10f;
+    width: 100%;
+    background-image: url("../imagem/fundo.png");
+    background-repeat: no-repeat;
+    background-position: top;
+        }
+
+        .entradas{
+            color: rgb(5, 5, 9);
+            margin-left: 34%;
+            margin-right:30%;
+            width: 25%;
+            font-size: 150%;
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgb(76, 10, 120);
+            font-style: oblique;
+            font-weight: bold;
+            height: 200px;
+            width: 400px; 
+        }
+
+        button{
+            text-align: center;
+            margin-left: 40%;
+            margin-right:40%;
+            cursor: pointer;
+            font-style: oblique;
+            font-weight: bold;     
+        }
+
+        h2{
+            text-align: center;
+            font-style: oblique;
+            font-weight: bold; 
+        }
+
+        #resultado{
+            text-align: center;
+            font-style: oblique;
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>SORTEIO</h2>
+
+        <div class="entradas">
+            <div class="entrada">
+                <label for="min">minimo:</label>
+                <input type="number" id="min" name="min">
+            </div>
+            <div class="entrada">
+                <label for="max">máximo:</label>
+                <input type="number" id="max" name="max">
+            </div>
+        </div>
+        <button id="sortear">Sortear</button>
+        <div id="resultado">
+
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
